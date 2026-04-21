@@ -8,11 +8,11 @@ export default function Final({ onRestart }: { onRestart: () => void }) {
   return (
     <section style={styles.wrap}>
       <div style={styles.card}>
-        <h2 style={styles.h2}>O que nós somos</h2>
+        <h2 style={styles.h2}>O que quero pra nós</h2>
 
         <p style={styles.p}>
-          Não é sobre uma data. É sobre o que a gente vem construindo com
-          constância.
+          Além de casar com você, passar décadas te chamando de linda e te
+          tratando igual uma princesa e futura rainha...
         </p>
 
         <div style={styles.box}>
@@ -30,9 +30,7 @@ export default function Final({ onRestart }: { onRestart: () => void }) {
             onClick={() => setRevealed((v) => !v)}
             style={{
               ...styles.primary,
-              background: revealed
-                ? "rgba(255,255,255,0.10)"
-                : "rgba(176, 79, 255, 0.20)",
+              background: revealed ? "var(--wine-deep)" : "var(--wine)",
             }}
           >
             {revealed ? "Ocultar" : "Revelar"}
@@ -42,21 +40,21 @@ export default function Final({ onRestart }: { onRestart: () => void }) {
             style={{ ...styles.message, ...(revealed ? styles.messageOn : {}) }}
           >
             <p style={{ marginTop: 0 }}>
-              Fernanda, isso aqui não é sobre um dia específico. É sobre tudo
-              que a gente vem sustentando até aqui.
+              <strong>Fernanda Gabriela de Moraes Cardoso Jarabiza</strong>, por
+              mais um ano, eu reafirmo a minha vontade absoluta, concreta,
+              convicta, definitiva e sem reservas de estar ao seu lado por toda
+              a minha vida até eu morrer. E renovo minha decisão de te amar
+              muito, muito, muito e muito todos os dias, de todas as formas e
+              com toda a manifestação. Se assim Deus quiser, e assim todos os
+              santos intercederem, assim vai ser.
             </p>
 
-            <p>
-              Eu não estou com você por impulso, nem por momento. Eu estou com
-              você porque escolhi — e continuo escolhendo.
-            </p>
+            <p>Por mais um ano eu escolho você, e unicamente você.</p>
 
-            <p>
-              E enquanto depender de mim, isso aqui vai ser conduzido com
-              seriedade, respeito e direção.
+            <p style={{ marginBottom: 0, opacity: 0.78 }}>
+              {" "}
+              <strong> — Gustavo Themyus Freitas Lima</strong>
             </p>
-
-            <p style={{ marginBottom: 0, opacity: 0.78 }}>— Gustavo</p>
           </div>
         </div>
 
@@ -65,17 +63,25 @@ export default function Final({ onRestart }: { onRestart: () => void }) {
             Reiniciar
           </button>
           <div style={{ opacity: 0.65, fontSize: 12 }}>
-            Se quiser mudar o texto, edita direto aqui no arquivo.
+            Sempre que quiser ver
           </div>
         </div>
       </div>
 
       <div style={styles.side}>
         <div style={styles.sideCard}>
-          <div style={styles.badge}>Sobre isso</div>
+          <div style={styles.badge}>Pra que possamos chegar lá</div>
 
           <p style={styles.sideText}>
-            Não foi feito pra ser perfeito. Foi feito pra ser verdadeiro.
+            É necessário que sejamos atentos às necessidades do outro, ao que o
+            outro tem a dizer, o que ele precisa. Que sejamos sempre
+            comunicativos, perguntando, ouvindo, acolhendo e considerando.
+            Porque é assim que uma parceria funciona, e principalmente uma
+            parceria de trincheira, que caminha pra ser a parceria da vida. Que
+            o que pensamos, sentimos, enfrentamos não seja oculto ao outro, mas
+            sempre compartilhado. Do namoro até o casamento é uma jornada, e
+            essas coisas fazem parte dela. E ela precisa estar toda visível a
+            luz pra não tropeçarmos.
           </p>
 
           <p style={styles.sideMuted}>E isso é o que importa.</p>
@@ -85,8 +91,9 @@ export default function Final({ onRestart }: { onRestart: () => void }) {
           <div style={styles.badge}>Constância</div>
 
           <p style={styles.sideText}>
-            O valor não está em um momento. Está em continuar, mesmo quando não
-            é fácil.
+            O valor está em ser presente, ouvinte, solícito, servente, suporte e
+            intercessor no pior momento do outro. E assim, aprendeu a amar para
+            sempre.
           </p>
         </div>
       </div>
@@ -105,10 +112,10 @@ const styles: Record<string, React.CSSProperties> = {
     height: "100%",
     borderRadius: 18,
     padding: 22,
-    background: "rgba(255,255,255,0.06)",
+    background: "var(--panel)",
     borderWidth: "1px",
     borderStyle: "solid",
-    borderColor: "rgba(255,255,255,0.12)",
+    borderColor: "rgba(138, 76, 99, 0.32)",
     overflow: "hidden",
   },
   h2: { margin: 0, fontSize: 28 },
@@ -117,10 +124,10 @@ const styles: Record<string, React.CSSProperties> = {
     marginTop: 14,
     borderRadius: 18,
     padding: 16,
-    background: "rgba(0,0,0,0.22)",
+    background: "rgba(51, 64, 50, 0.24)",
     borderWidth: "1px",
     borderStyle: "solid",
-    borderColor: "rgba(255,255,255,0.10)",
+    borderColor: "rgba(138, 76, 99, 0.32)",
     display: "grid",
     gap: 12,
   },
@@ -130,17 +137,18 @@ const styles: Record<string, React.CSSProperties> = {
     borderRadius: 12,
     display: "grid",
     placeItems: "center",
-    background: "rgba(255,255,255,0.08)",
+    background: "rgba(106, 47, 69, 0.2)",
     borderWidth: "1px",
     borderStyle: "solid",
-    borderColor: "rgba(255,255,255,0.12)",
+    borderColor: "rgba(138, 76, 99, 0.34)",
   },
   primary: {
     justifySelf: "start",
     appearance: "none",
     borderWidth: "1px",
     borderStyle: "solid",
-    borderColor: "rgba(255,255,255,0.18)",
+    borderColor: "rgba(138, 76, 99, 0.42)",
+    background: "var(--wine)",
     color: "rgba(255,255,255,0.95)",
     padding: "10px 14px",
     borderRadius: 14,
@@ -169,8 +177,8 @@ const styles: Record<string, React.CSSProperties> = {
     appearance: "none",
     borderWidth: "1px",
     borderStyle: "solid",
-    borderColor: "rgba(255,255,255,0.14)",
-    background: "rgba(255,255,255,0.06)",
+    borderColor: "rgba(138, 76, 99, 0.3)",
+    background: "var(--wine)",
     color: "rgba(255,255,255,0.9)",
     padding: "10px 14px",
     borderRadius: 14,
@@ -181,10 +189,10 @@ const styles: Record<string, React.CSSProperties> = {
   sideCard: {
     borderRadius: 18,
     padding: 18,
-    background: "rgba(255,255,255,0.04)",
+    background: "rgba(255,255,255,0.03)",
     borderWidth: "1px",
     borderStyle: "solid",
-    borderColor: "rgba(255,255,255,0.10)",
+    borderColor: "rgba(138, 76, 99, 0.32)",
   },
   badge: {
     display: "inline-block",
@@ -192,8 +200,8 @@ const styles: Record<string, React.CSSProperties> = {
     borderRadius: 999,
     borderWidth: "1px",
     borderStyle: "solid",
-    borderColor: "rgba(255,255,255,0.14)",
-    background: "rgba(255,255,255,0.05)",
+    borderColor: "rgba(138, 76, 99, 0.34)",
+    background: "rgba(106, 47, 69, 0.18)",
     fontSize: 12,
     opacity: 0.9,
     marginBottom: 10,

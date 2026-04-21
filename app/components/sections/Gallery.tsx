@@ -33,8 +33,7 @@ export default function Gallery({ onNext }: { onNext: () => void }) {
         <div style={styles.caption}>
           <div style={{ fontWeight: 700 }}>Galeria</div>
           <div style={{ opacity: 0.7, fontSize: 12 }}>
-            Clique nas miniaturas. (Troca as imagens em{" "}
-            <code>/public/photos</code>)
+            Clique nas miniaturas
           </div>
         </div>
       </div>
@@ -67,9 +66,7 @@ export default function Gallery({ onNext }: { onNext: () => void }) {
           <div style={styles.panelTitle}>Legenda rápida</div>
           <textarea
             className="minimalScroll"
-            defaultValue={
-              "Escreve aqui uma frase curta pra essa seção.\nAlgo que ela vai ler e sorrir."
-            }
+            defaultValue={"Te amo em todos os momentos."}
             style={styles.textarea}
           />
           <button onClick={onNext} style={styles.primary}>
@@ -91,8 +88,9 @@ const styles: Record<string, React.CSSProperties> = {
   viewer: {
     borderRadius: 18,
     padding: 14,
-    background: "rgba(255,255,255,0.06)",
-    border: "1px solid rgba(255,255,255,0.12)",
+    background: "var(--panel)",
+    border: "1px solid var(--border)",
+    borderColor: "rgba(138, 76, 99, 0.32)",
     display: "grid",
     gridTemplateRows: "1fr auto",
     gap: 12,
@@ -102,7 +100,7 @@ const styles: Record<string, React.CSSProperties> = {
     position: "relative",
     borderRadius: 18,
     overflow: "hidden",
-    border: "1px solid rgba(255,255,255,0.10)",
+    border: "1px solid var(--border)",
   },
   caption: {
     display: "flex",
@@ -128,8 +126,8 @@ const styles: Record<string, React.CSSProperties> = {
     appearance: "none",
     borderWidth: "1px",
     borderStyle: "solid",
-    borderColor: "rgba(255,255,255,0.10)",
-    background: "rgba(255,255,255,0.04)",
+    borderColor: "rgba(138, 76, 99, 0.24)",
+    background: "rgba(59, 21, 35, 0.7)",
     borderRadius: 16,
     padding: 8,
     cursor: "pointer",
@@ -137,8 +135,8 @@ const styles: Record<string, React.CSSProperties> = {
   thumbBtnActive: {
     borderWidth: "1px",
     borderStyle: "solid",
-    borderColor: "rgba(176, 79, 255, 0.45)",
-    background: "rgba(176, 79, 255, 0.10)",
+    borderColor: "rgba(138, 76, 99, 0.4)",
+    background: "rgba(106, 47, 69, 0.16)",
   },
   thumb: {
     position: "relative",
@@ -150,8 +148,9 @@ const styles: Record<string, React.CSSProperties> = {
   panel: {
     borderRadius: 18,
     padding: 18,
-    background: "rgba(255,255,255,0.04)",
-    border: "1px solid rgba(255,255,255,0.10)",
+    background: "rgba(255,255,255,0.03)",
+    border: "1px solid var(--border)",
+    borderColor: "rgba(138, 76, 99, 0.32)",
     display: "grid",
     gridTemplateRows: "auto 1fr auto",
     gap: 12,
@@ -161,8 +160,8 @@ const styles: Record<string, React.CSSProperties> = {
     width: "100%",
     resize: "none",
     borderRadius: 14,
-    border: "1px solid rgba(255,255,255,0.14)",
-    background: "rgba(0,0,0,0.22)",
+    border: "1px solid rgba(138, 76, 99, 0.3)",
+    background: "rgba(255,255,255,0.03)",
     color: "rgba(255,255,255,0.9)",
     padding: 12,
     outline: "none",
@@ -171,8 +170,8 @@ const styles: Record<string, React.CSSProperties> = {
   },
   primary: {
     appearance: "none",
-    border: "1px solid rgba(255,255,255,0.18)",
-    background: "rgba(176, 79, 255, 0.20)",
+    border: "1px solid rgba(138, 76, 99, 0.42)",
+    background: "var(--wine)",
     color: "rgba(255,255,255,0.95)",
     padding: "12px 16px",
     borderRadius: 14,
