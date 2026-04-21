@@ -33,12 +33,12 @@ export default function Intro({ onNext }: { onNext: () => void }) {
           <div style={styles.badge}>Mensagem</div>
 
           <p style={styles.sideText}>
-            “Que eu gosto muito, muito, muito de você, isso você já sabe. Que eu
+            Que eu gosto muito, muito, muito de você, isso você já sabe. Que eu
             te amo muito também. Mas muito mais do que isso, eu daria mesmo o
             que eu não tenho por você e por nós dois. Sonho todos os dias com a
             nossa família na nossa casa, tirando muitas fotos e guardando 15 mil
             momentos juntos que nem o Céu vai deixar de lado. Porque é um Céu
-            aqui que eu já quero te dar.”
+            aqui que eu já quero te dar.
           </p>
 
           <p style={styles.sideMuted}>
